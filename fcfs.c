@@ -29,7 +29,7 @@ void fcfs(process *A, int n){
     }
 
     for (int i = 0; i < totalBurstTime; i++)
-       printf("%d \n", processRunning[i]);
+       printf("%d\r\n", processRunning[i]);
 }
 
 int main() {

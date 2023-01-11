@@ -67,7 +67,7 @@ void srtf(process *A, int n) {
     }
 
     for (i = 0; i < cp; i++)
-        printf("%d\n", processRunning[i]);
+        printf("%d\r\n", processRunning[i]);
 }
 
 int main() {

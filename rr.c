@@ -89,7 +89,7 @@ void rr(process *A, int quantum, int n) {
     }
 
     for (int i = 0; i < total; i++)
-        printf("%d \n", processRunning[i]);
+        printf("%d\r\n", processRunning[i]);
 }
 
 int main() {
