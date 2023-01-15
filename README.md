@@ -6,7 +6,7 @@
 ### Αλγόριθμοι που περιλαμβάνονται:
 
 * First Come First Serve / FCFS
-* hortest Job First / SJF (χωρίς προεκχώρηση)
+* Shortest Job First / SJF (χωρίς προεκχώρηση)
 * Shortest Remaining Time First / SRTF με προεκχώρηση)
 * Round-Robin / RR (για οποιαδήποτε τιμή κβάντου)
 
