@@ -1,23 +1,20 @@
-# Operating system scheduling algorithms
+# Operating system scheduling algorithms 101
 
-### Πληροφορίες 
-> Προγραμματιστική εργασία στο μάθημα [Λειτουργικά Συστήματα [NCO-05-04]](https://elearning.auth.gr/course/view.php?id=8119) του τμήματος πληροφορικής του Α.Π.Θ για το ακαδημαϊκό έτος 2022/23. <br />
+In this repository, you will find several scheduling algorithms. The metirial, is a part of the course [Operating Systems [NCO-05-04]](https://elearning.auth.gr/course/view.php?id=8119) (2022/23) of the Department of Computer Science at Aristotle University of Thessaloniki.
 
-### Αλγόριθμοι που περιλαμβάνονται
+## Description
 
-* First Come First Serve / FCFS
-* Shortest Job First / SJF (χωρίς προεκχώρηση)
-* Shortest Remaining Time First / SRTF (με προεκχώρηση)
-* Round-Robin / RR (για οποιαδήποτε τιμή κβάντου)
+Algorithms implemented:
 
-### Γενικά
+- First Come First Serve / FCFS
+- Shortest Job First / SJF (non-preemptive)
+- Shortest Remaining Time First / SRTF (preemptive)
+- Round-Robin / RR (for any time quantum value)
 
-Τα αρχεία εισόδου, θα πρέπει να είναι απλά text αρχεία (εναλλακτικά μπορεί να γίνει άμεση είσοδος δεδομένων από το πληκτρολόγιο) και να ακολουθούν την παρακάτω δομή:
+The input files should be simple text files (alternatively, data can be directly inputted from the keyboard) and should follow the following structure:
 
-* Η πρώτη γραμμή περιέχει έναν ακέραιο, ο οποίος αναφέρεται στον αριθμό των διεργασιών που περιγράφονται παρακάτω.
-* Η δεύτερη γραμμή περιέχει ένα ακέραιο, ο οποίος αναφέρεται στο κβάντο που ενδεχομένως χρησιμοποιούν οι αλγόριθμοι. Το κβάντο ορίζεται πάντα, για όλους 
-τους αλγόριθμους, αλλά προφανώς δεν θα χρησιμοποιείται από αλγόριθμους στους οποίουςδεν παίζει κανένα ρόλο.
-* Οι υπόλοιπες γραμμές (όσες και ο ακέραιος στην πρώτη γραμμή του αρχείου), περιέχουν τρεις ακεραίους, οι οποίοι αντιπροσωπεύουν το ID της διεργασίας, το χρόνο
-άφιξης της και το χρόνο CPU καταιγισμού της.
+- The first line contains an integer indicating the number of processes described below.
+- The second line contains an integer indicating the time quantum possibly used by the algorithms. The time quantum is always defined for all the algorithms, but obviously, it will not be used by algorithms in which it doesn't play any role.
+- The remaining lines (as many as the integer on the first line of the file) contain three integers representing the ID of the process, its arrival time, and its CPU burst time.
 
-Οι αλγόριθμοι τυπώνουν στο τέλος της εκτέλεσής στην τυπική έξοδο, σε κάθε γραμμή, το ID της διεργασίας που εκτελείται σε κάθε χρόνο (ξεκινώντας από τη χρονική στιγμή 0).
+At the end of their execution, the algorithms print in the standard output, on each line, the ID of the process being executed at each time (starting from time 0).
